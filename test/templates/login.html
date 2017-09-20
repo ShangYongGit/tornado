@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+this is login <br>
+{{ nextname }}
+
+<!--<form method="post" action="/login">-->
+<form method="post" action='/login?aaa={{ nextname }}' >
+    <p>用户名<br><input type="text" name="name"></p>
+    <p>密码<br><input type="text" name="password"></p>
+    <input type="submit">
+</form>
+
+
+</body>
+</html>
